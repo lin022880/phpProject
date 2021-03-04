@@ -1,0 +1,53 @@
+.carImg,
+.carBody {
+    display: flex;
+    background-color: white;
+    border-radius: 0.3rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carName {
+    height: 100%;
+    min-height: 200px;
+    padding: 1rem 1rem;
+}
+
+.carPrice,
+.carPopularity {
+    padding: 1rem 1rem;
+}
+
+.carPrice {
+    color: red;
+}
+
+input#buy,
+input#joinCar {
+    width: 200px;
+}
+
+.row.form-group {
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1200px) {
+    .H {
+        height: 11vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .H {
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .carName {
+        min-height: unset;
+    }
+    .H {
+        height: 0vh;
+    }
+}

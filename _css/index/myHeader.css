@@ -1,0 +1,133 @@
+#LOGO {
+    max-width: 160px;
+}
+
+#myHeader_1 {
+    background-color: #48b8e7;
+    /* LOGO背景條顏色 */
+}
+
+#myHeader_2 {
+    margin-bottom: 2%;
+}
+
+.myHeaderImg {
+    /* 會員 購物 Icon */
+    width: 14%;
+    margin-right: 1.5rem;
+}
+
+a#loginOut {
+    color: white;
+}
+
+#webMenu {
+    padding: 0;
+}
+
+#myHeader_1 .input-group {
+    /* 搜尋欄 */
+    width: 145px;
+    height: fit-content;
+}
+
+#countIFather {
+    position: relative;
+}
+
+div#countI {
+    background-color: white;
+    position: absolute;
+    top: -14px;
+    right: 32px;
+    width: 15px;
+    height: 15px;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+.input-group>input {
+    /* 搜尋打字框 */
+    height: 100%;
+}
+
+.input-group-append>button {
+    /* 搜尋按鈕 */
+    height: 100%;
+    font-size: 0.1%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#myHeader_2>nav {
+    /* navbar設定 */
+    background-color: #ebf2ea;
+    font-size: 18px;
+}
+
+#myHeader_2 nav li a {
+    /* navbar連結 */
+    color: #2c2b2b;
+}
+
+#myHeader_2 nav li a:hover {
+    color: #0abda0;
+}
+
+
+/* navbar動作設定↑↓ */
+
+#myHeader_2 ul .nav-link.active,
+#myHeader_2 ul .show>.nav-link {
+    color: #efecea;
+    background-color: #80add7;
+    border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .myHeaderImg {
+        margin-left: 0;
+        margin-right: 0.5rem;
+    }
+    .myHeaderImg {
+        /* 會員 購物 Icon */
+        width: 20%;
+    }
+    div#countI {
+        top: -11px;
+        right: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    div.col-auto.col-md-auto.col-lg-4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #myHeader_2 nav {
+        /* navbar設定 */
+        font-size: 4vw;
+    }
+    #myHeader_1 .input-group {
+        display: none;
+    }
+    div#countI {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    div#countI {
+        right: 8px;
+        top: -7px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #mySearch {
+        display: none;
+    }
+}

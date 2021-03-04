@@ -1,0 +1,8 @@
+div#selectBox {
+    justify-content: flex-end;
+    display: flex;
+}
+div.row div.column a{
+    text-decoration: none;
+}
+

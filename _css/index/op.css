@@ -1,0 +1,82 @@
+#op20 {
+    /* 皮卡丘圖設定 */
+    width: 150px;
+    height: 200px;
+    position: fixed;
+    right: 20px;
+    top: calc(100% - 455px);
+    transition: width 2s, height 2s, transform 2s;
+    z-index: 20;
+    background-image: url("../../img/pikachu2.svg");
+    /* background-image: url("https://images.squarespace-cdn.com/content/v1/569cad2869a91a75f816c2f3/1467224139219-NNE8R452RG2K9IUIMSGS/ke17ZwdGBToddI8pDm48kG4VqDreF-qTqyP-RyQBlzwUqsxRUqqbr1mOJYKfIPR7znJwASjrmwtS7aL_aQryCXlkcWPgwCH4BpYfRI2hYAjFhSPlVV71_Xhqg_adcQJMeRtgsX8w4G4OwnlkygUN0scZlVkSOXDfbpoDvmNhc-pSvaCvYqvyskJ0ikf2TX0s/image-asset.jpeg?format=750w"); */
+    /* background-image: url("https://images.squarespace-cdn.com/content/v1/569cad2869a91a75f816c2f3/1467222421076-VW9V6FWY71P30DFFBQTK/ke17ZwdGBToddI8pDm48kG4VqDreF-qTqyP-RyQBlzwUqsxRUqqbr1mOJYKfIPR7HqPXWcFyPbLMXtOzFZtQBRx9yxala7xiss0F540IdaVCRW4BPu10St3TBAUQYVKc6H_r0xAoVGAY7tABNuiElkDA2xtBjCG1X8mZmBin6zG4wMMGWUmKwTqnpihzBeOJ/image-asset.jpeg?format=750w"); */
+    /* background-image: url("https://images.squarespace-cdn.com/content/v1/569cad2869a91a75f816c2f3/1467224962258-Q9SU4KXTYLF84Q8QPR7S/ke17ZwdGBToddI8pDm48kG4VqDreF-qTqyP-RyQBlzwUqsxRUqqbr1mOJYKfIPR7HqPXWcFyPbLMXtOzFZtQBRx9yxala7xiss0F540IdaVCRW4BPu10St3TBAUQYVKc6H_r0xAoVGAY7tABNuiElkDA2xtBjCG1X8mZmBin6zG4wMMGWUmKwTqnpihzBeOJ/44.jpg?format=750w"); */
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    /* border: solid 2px red; */
+}
+
+#op20:hover {
+    /* 皮卡丘做旋轉放大 */
+    width: 300px;
+    height: 400px;
+    /* transform: rotate(3600deg); */
+}
+
+#op20:hover div {
+    /* 顯示皮卡丘的按鈕 */
+    font-size: 2rem;
+    /* visibility: visible; */
+}
+
+#op20 div {
+    /* 皮卡丘裡的按鈕 */
+    width: 45%;
+    height: 15%;
+    position: absolute;
+    font-size: 0.1rem;
+    transition: font-size 1.4s;
+    background-color: #48b8e7;
+    color: #efecea;
+    /* visibility: hidden; */
+}
+
+#op20Btn1 {
+    /* 皮卡丘裡的按鈕位置 */
+    bottom: 0;
+    left: 0;
+}
+
+#op20Btn2 {
+    /* 皮卡丘裡的按鈕位置 */
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    #op20 {
+        right: 20px;
+        top: 130px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    op {
+        display: none;
+    }
+}
+
+.goToTop {
+    background-repeat: no-repeat;
+    background-color: #2bbda5;
+    bottom: 3%;
+    right: 2%;
+    border-radius: 0.5rem;
+    color: #eee;
+    font-size: 15px;
+    opacity: 0.8;
+    padding: 10px;
+    position: fixed;
+    z-index: 999;
+}

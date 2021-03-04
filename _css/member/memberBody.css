@@ -1,0 +1,122 @@
+#memberBody {
+    position: relative;
+    top: 7vh;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#memberBody>input {
+    position: absolute;
+    opacity: 0;
+    left: -50px;
+}
+
+#memberBody .page {
+    width: 100%;
+    height: 58vh;
+    position: relative;
+    padding: 9rem 5rem;
+    border: solid 3px #E5E5E5;
+    border-radius: 0 0.75rem 0.75rem 0.75rem;
+    /* background-color: #efecea; */
+    background-image: url("../../img/login.jpg");
+    transition: 1s;
+}
+
+#memberBody .page2 {
+    width: 100%;
+    height: 58vh;
+    position: absolute;
+    top: calc(100% - 58vh);
+    padding: 7rem 5rem;
+    border: solid 3px #E5E5E5;
+    border-radius: 0 0.75rem 0.75rem 0.75rem;
+    /* background-color: #efecea; */
+    background-image: url("../../img/create.jpg");
+    transition: 1s;
+    z-index: -1;
+}
+
+#memberBody .row>label {
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+    position: relative;
+    top: 3px;
+    z-index: 1;
+}
+
+#menuControl1 {
+    margin: 0;
+    border: solid 3px #E5E5E5;
+    border-bottom-color: transparent;
+    border-radius: 0.75rem 0 0 0;
+    color: white;
+    background-color: #bd2130;
+    transition: 1s;
+}
+
+#menuControl2 {
+    margin: 0;
+    border: solid 3px #E5E5E5;
+    border-left: 0;
+    border-radius: 0 0.75rem 0 0;
+    background-color: #F4F4F4;
+    transition: 1s;
+}
+
+#Control2:checked~.page2 {
+    z-index: 0;
+}
+
+#Control2:checked~.row #menuControl1 {
+    color: black;
+    background-color: #F4F4F4;
+    border-bottom-color: #E5E5E5;
+}
+
+#Control2:checked~.row #menuControl2 {
+    color: white;
+    background-color: #bd2130;
+    border-bottom-color: transparent;
+}
+
+.page input:invalid {
+    border-color: lightcoral;
+}
+
+.page2 input:invalid {
+    border-color: lightcoral;
+}
+
+@media screen and (max-width: 1200px) {
+    #memberBody .page {
+        padding: 7rem 3rem;
+    }
+    #memberBody .page2 {
+        padding: 5rem 3rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #memberBody .page,
+    #memberBody .page {
+        border-radius: 0 0 0.75rem 0.75rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #memberBody {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #memberBody .page {
+        padding: 3rem 2rem;
+    }
+    #memberBody .page2 {
+        padding: 1rem 2rem;
+    }
+}

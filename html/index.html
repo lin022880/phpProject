@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME SG</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../img/LOGOIcon.svg">
+
+    <link rel="stylesheet" href="../_css/index/myBody.css">
+    <link rel="stylesheet" href="../_css/index/ad.css">
+    <link rel="stylesheet" href="../_css/index/op.css">
+
+    <link rel="stylesheet" href="../_css/index/font.css">
+    <link rel="stylesheet" href="../_css/index/mobileMenu.css">
+    <link rel="stylesheet" href="../_css/index/myHeader.css">
+    <link rel="stylesheet" href="../_css/index/myFloor.css">
+
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/popper.min.js"></script>
+    <script src="../_js/bootstrap.js"></script>
+
+    <script>
+        var ml = {
+            timelines: {}
+        };
+    </script>
+    <style>
+        body {
+            background-color: #efecea;
+        }
+        
+        .ml2 {
+            font-weight: 900;
+            font-size: 3.5em;
+        }
+        
+        .ml2 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#mySpy">
+    <a href="#" id="goToTop" class="goToTop">
+        <div>TOP</div>
+    </a>
+
+    <op>
+        <div id="op20">
+            <div id="op20Btn1" class="btn">
+                <p>會員</p>
+            </div>
+            <div id="op20Btn2" class="btn">
+                <p>購物車</p>
+            </div>
+        </div>
+    </op>
+
+    <myHeader>
+        <div id="myHeader_1" class="align-items-center justify-content-center m-0 row">
+            <div class="col-5 col-md-4 col-lg-2">
+                <img id="LOGO" class="" src="../img/LOGO_48b8e7.svg" alt="">
+            </div>
+            <div class="col-auto col-md-auto col-lg-4"></div>
+            <div class="input-group col-md-4 col-lg-3">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">Go</button>
+                </div>
+            </div>
+            <div id="myHeaderImgId" class="text-right col-5 col-md-3 col-lg-2">
+                <a href="http://127.0.0.1:5501/html/member.html"><img class="myHeaderImg" src="../img/memberIcon.svg" alt=""></a>
+                <img class="myHeaderImg" src="../img/shoppingIcon.svg" alt="">
+                <img id="mySearch" class="myHeaderImg" src="../img/magnifierIcon.svg" alt="">
+            </div>
+        </div>
+        <div id="myHeader_2" class="sticky-top">
+            <div id="mobileMenu">
+                <input id="menuControl" type="checkbox" name="">
+                <div class="mobileMenu">
+                    <label for="menuControl"></label>
+                    <nav>
+                        <ul class="navbar-nav">
+                            <li class="mb-2 nav-item text-right">
+                                <label for="menuControl"><img src="../img/XIcon.svg" alt=""></label>
+                            </li>
+                            <li class="mr-5 nav-item active">
+                                <a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="mr-5 nav-item">
+                                <a class="nav-link" href="#">活動專區</a>
+                            </li>
+                            <li class="mr-5 nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Swich專區
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich主機</a>
+                                    <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich遊戲</a>
+                                    <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich周邊</a>
+                                </div>
+                            </li>
+                            <li class="mr-5 nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    PS4專區
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">PS4主機</a>
+                                    <a class="dropdown-item" href="#">PS4遊戲</a>
+                                    <a class="dropdown-item" href="#">PS4周邊</a>
+                                </div>
+                            </li>
+                            <li class="mr-5 nav-item">
+                                <a class="nav-link" href="#">客服Q&A</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+            <nav id="webMenu" class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="mr-5 nav-item active">
+                            <a class="nav-link" href="http://127.0.0.1:5501/html/index.html">首頁<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="mr-5 nav-item">
+                            <a class="nav-link" href="#">活動專區</a>
+                        </li>
+                        <li class="mr-5 nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Swich專區
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich主機</a>
+                                <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich遊戲</a>
+                                <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich周邊</a>
+                            </div>
+                        </li>
+                        <li class="mr-5 nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PS4專區
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">PS4主機</a>
+                                <a class="dropdown-item" href="#">PS4遊戲</a>
+                                <a class="dropdown-item" href="#">PS4周邊</a>
+                            </div>
+                        </li>
+                        <li class="mr-5 nav-item">
+                            <a class="nav-link" href="#">客服Q&A</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </myHeader>
+
+    <div class="container-fluid">
+        <div id="myDemo" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myDemo" data-slide-to="0" class="active"></li>
+                <li data-target="#myDemo" data-slide-to="1"></li>
+                <li data-target="#myDemo" data-slide-to="2"></li>
+                <li data-target="#myDemo" data-slide-to="3"></li>
+                <li data-target="#myDemo" data-slide-to="4"></li>
+                <li data-target="#myDemo" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="../img/1.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="../img/2.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="../img/3.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="../img/4.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="../img/5.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="../img/6.jpg" alt="">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myDemo" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myDemo" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <hr>
+
+    <myBody>
+        <div id="myBody" class="container-fluid pr-0 pl-0">
+            <div id="mySpy" class="row m-0">
+                <div id="leftBody" class="col-2">
+                    <!-- 設定清單 -->
+                    <ul class="nav flex-column sticky-top">
+                        <p class="display-1 pt-3"><br></p>
+                        <li><a class="nav-link" href="#spyAll">人氣商品 TOP10</a></li>
+                        <li><a class="nav-link" href="#spySwich">Switch專區 TOP10</a></li>
+                        <li><a class="nav-link" href="#spyPS4">PS4專區 TOP10</a></li>
+                    </ul>
+                </div>
+                <div id="rightBody" class="col-9">
+                    <p id="spyAll" class="pt-3"><br></p>
+                    <div class="align-items-end row">
+                        <h1 class="ml2 col-11">人氣商品 TOP10</h1>
+                        <a class="col-1" href="http://127.0.0.1:5501/html/shopping.html">
+                            <p>更多</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="spySwich" class="pt-3"><br></p>
+                    <div class="align-items-end row">
+                        <h1 class="ml2 col-11">Switch專區 TOP10</h1>
+                        <a class="col-1" href="http://127.0.0.1:5501/html/shopping.html">
+                            <p>更多</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="spyPS4" class="pt-3"><br></p>
+                    <div class="align-items-end row">
+                        <h1 class="ml2 col-11">PS4專區 TOP10</h1>
+                        <a class="col-1" href="http://127.0.0.1:5501/html/shopping.html">
+                            <p>更多</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <img src="../img/pikachu.jpg" class="img-fluid">
+                                <div class="card-body">
+                                    我是內容 A
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="ad" class="row">
+                        <img src="../img/ad.jpg" alt="">
+                    </div>
+                    </br>
+                </div>
+            </div>
+    </myBody>
+    <myFloor>
+        <hr>
+        <div id="myFloor" class="p-2 row m-0 align-items-end"></div>
+    </myFloor>
+
+    <script>
+        $('.ml2').each(function() {
+            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+        });
+
+        ml.timelines["ml2"] = anime.timeline({
+                loop: 3
+            })
+            .add({
+                targets: '.ml2 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: function(el, i) {
+                    return 70 * i;
+                }
+            })
+            // .add({
+            //     targets: '.ml2',
+            //     opacity: 0,
+            //     duration: 1000,
+            //     easing: "easeOutExpo",
+            //     delay: 1000
+            // })
+            // ;
+    </script>
+
+    <script>
+        $(function() {
+            // Amount of scrolling before button is shown/hidden.
+            var offset = 100;
+
+            // Fade duration
+            var duration = 500;
+
+            // Toggle view of button when scrolling.
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > offset) {
+                    $('#goToTop').fadeIn(duration);
+                } else {
+                    $('#goToTop').fadeOut(duration);
+                }
+            });
+
+            // Scroll to top when button is clicked.
+            $('#goToTop').click(function(event) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, duration);
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>

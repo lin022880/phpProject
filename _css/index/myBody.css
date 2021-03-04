@@ -1,0 +1,120 @@
+#rightBody {
+    /* 右邊內容頁 右留白 */
+    padding-right: 10%;
+}
+
+#leftBody li {
+    /* 監聽項目清單 */
+    margin-bottom: 1vh;
+    border-radius: 0.25rem;
+    background-color: #bf9d7a;
+}
+
+#leftBody li a {
+    /* 監聽項目清單文字 */
+    color: #fff;
+}
+
+#leftBody ul .nav-link.active,
+#leftBody ul .show>.nav-link {
+    /* 監聽動作啟動後 */
+    color: #fff;
+    background-color: #ffd200;
+    border-radius: 0.25rem;
+}
+
+.column {
+    /* 卡片外面袋子 */
+    float: left;
+    width: 18%;
+    margin: 1%;
+}
+
+.row:after {
+    /* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cardBody {
+    /* 卡片 */
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0.75rem;
+}
+
+.cardBodySet {
+    color: black;
+    word-break: break-all;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: 72px;
+}
+
+#rightBody h1 {
+    /* 卡片外大標題 */
+    color: #0d9ddb;
+}
+
+#rightBody .column>.card img {
+    /* 卡片圖片修復 */
+    object-fit: contain;
+}
+
+.card:hover {
+    /* 卡片動作設定 */
+    box-shadow: 0 0.2rem 0.5rem #333;
+    z-index: 20;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1200px) {
+    #leftBody {
+        display: none;
+    }
+    #rightBody p {
+        display: none;
+    }
+    #mySpy {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #rightBody {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .column {
+        margin: 1.5%;
+        width: 30%;
+    }
+    #rightBody .row {
+        margin: 0;
+        padding-left: 1%;
+    }
+    #rightBody h1 {
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #rightBody h1 {
+        font-size: 6vw;
+    }
+    .column {
+        margin-left: 2.5%;
+        width: 45%;
+    }
+}

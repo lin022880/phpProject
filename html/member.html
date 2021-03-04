@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="../img/LOGOIcon.svg">
+
+    <link rel="stylesheet" href="../_css/member/memberBody.css">
+    <link rel="stylesheet" href="../_css/member/memberFloor.css">
+
+    <link rel="stylesheet" href="../_css/index/font.css">
+    <link rel="stylesheet" href="../_css/index/mobileMenu.css">
+    <link rel="stylesheet" href="../_css/index/myHeader.css">
+    <link rel="stylesheet" href="../_css/index/myFloor.css">
+
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/popper.min.js"></script>
+    <script src="../_js/bootstrap.js"></script>
+    <style>
+        body {
+            background-color: #efecea;
+        }
+    </style>
+</head>
+
+<body>
+    <myHeader>
+        <div id="myHeader_1" class="align-items-center justify-content-center m-0 row">
+            <div class="col-5 col-md-4 col-lg-2">
+                <img id="LOGO" class="" src="../img/LOGO_48b8e7.svg" alt="">
+            </div>
+            <div class="col-auto col-md-auto col-lg-4"></div>
+            <div class="input-group col-md-4 col-lg-3">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="submit">Go</button>
+                </div>
+            </div>
+            <div id="myHeaderImgId" class="text-right col-5 col-md-3 col-lg-2">
+                <a href="http://127.0.0.1:5501/html/member.html"><img class="myHeaderImg" src="../img/memberIcon.svg" alt=""></a>
+                <img class="myHeaderImg" src="../img/shoppingIcon.svg" alt="">
+                <img id="mySearch" class="myHeaderImg" src="../img/magnifierIcon.svg" alt="">
+            </div>
+        </div>
+        <div id="myHeader_2" class="sticky-top">
+            <div id="mobileMenu">
+                <input id="menuControl" type="checkbox" name="">
+                <div class="mobileMenu">
+                    <label for="menuControl"></label>
+                    <nav>
+                        <ul class="navbar-nav">
+                            <li class="mb-2 nav-item text-right">
+                                <label for="menuControl"><img src="../img/XIcon.svg" alt=""></label>
+                            </li>
+                            <li class="mr-5 nav-item active">
+                                <a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="mr-5 nav-item">
+                                <a class="nav-link" href="#">活動專區</a>
+                            </li>
+                            <li class="mr-5 nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Swich專區
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich主機</a>
+                                    <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich遊戲</a>
+                                    <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich周邊</a>
+                                </div>
+                            </li>
+                            <li class="mr-5 nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    PS4專區
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">PS4主機</a>
+                                    <a class="dropdown-item" href="#">PS4遊戲</a>
+                                    <a class="dropdown-item" href="#">PS4周邊</a>
+                                </div>
+                            </li>
+                            <li class="mr-5 nav-item">
+                                <a class="nav-link" href="#">客服Q&A</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+            <nav id="webMenu" class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="mr-5 nav-item active">
+                            <a class="nav-link" href="http://127.0.0.1:5501/html/index.html">首頁<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="mr-5 nav-item">
+                            <a class="nav-link" href="#">活動專區</a>
+                        </li>
+                        <li class="mr-5 nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Swich專區
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich主機</a>
+                                <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich遊戲</a>
+                                <a class="dropdown-item" href="http://127.0.0.1:5501/html/shopping.html">Swich周邊</a>
+                            </div>
+                        </li>
+                        <li class="mr-5 nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PS4專區
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">PS4主機</a>
+                                <a class="dropdown-item" href="#">PS4遊戲</a>
+                                <a class="dropdown-item" href="#">PS4周邊</a>
+                            </div>
+                        </li>
+                        <li class="mr-5 nav-item">
+                            <a class="nav-link" href="#">客服Q&A</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </myHeader>
+
+    <memberBody>
+        <div id="memberBody">
+            <input type="radio" name="Control" id="Control1">
+            <input type="radio" name="Control" id="Control2">
+            <div class="row m-0">
+                <label id="menuControl1" class="col-6 col-lg-3 text-center" for="Control1">登入</label>
+                <label id="menuControl2" class="col-6 col-lg-3 text-center" for="Control2">註冊</label>
+            </div>
+            <div class="page">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="usrMember">會員帳號 :</label>
+                        <input type="email" class="form-control" id="usrMember" name="usernameMember" placeholder="信箱*" pattern="[a-z0-9._%+-]+@gmail.com" title="為gmail的信箱地址">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwdMember">會員密碼 :</label>
+                        <input type="password" class="form-control" id="pwdMember" name="passwordMember" placeholder="密碼*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}" title="為至少一個數字，一個大寫和小寫字母，以及至少8個至多10個字符">
+                    </div>
+                    <button type="submit" class="btn btn-primary">送出</button>
+                    <button type="submit" class="alert-light btn btn-primary">忘記密碼</button>
+                </form>
+            </div>
+
+            <div class="page2">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="usr">註冊帳號 :</label>
+                        <input type="email" class="form-control" id="usr" name="username" placeholder="請輸入您的會員信箱" pattern="[a-z0-9._%+-]+@gmail.com" title="必須為gmail的信箱地址">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">密碼 :</label>
+                        <input type="text" class="form-control" id="pwd" name="password" placeholder="請輸入您的會員密碼" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}" title="必須包含至少一個數字，一個大寫和小寫字母，以及至少8個至多10個字符">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd2">確認密碼 :</label>
+                        <input type="text" class="form-control" id="pwd2" name="password2" placeholder="請再次輸入密碼" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}">
+                    </div>
+                    <button type="submit " class="btn btn-primary ">送出</button>
+                </form>
+            </div>
+        </div>
+    </memberBody>
+    <myFloor>
+        <hr>
+        <div id="myFloor" class="p-2 row m-0 align-items-end"></div>
+    </myFloor>
+</body>
+
+</html>

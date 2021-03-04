@@ -1,0 +1,57 @@
+div.container div.column>a {
+    text-decoration: none;
+}
+
+.memberShoppingCard {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+input#cancelFavorite {
+    position: fixed;
+    right: 20px;
+    top: 110px;
+}
+
+div.cardBody>div {
+    position: relative;
+}
+
+input#cancelCheck {
+    position: absolute;
+    right: 0;
+    zoom: 1.5;
+}
+
+.H2 {
+    height: 35vh;
+}
+
+@media screen and (max-width: 1200px) {
+    .H2 {
+        height: 63vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    input#cancelFavorite {
+        right: unset;
+        top: unset;
+        bottom: 15px;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    .H2 {
+        height: 66vh;
+    }
+}
